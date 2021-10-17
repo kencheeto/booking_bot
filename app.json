@@ -2,8 +2,6 @@
   "name": "Booking Bot",
   "description": "Makes Bookings",
   "image": "heroku/python",
-  // "repository": "https://github.com/heroku/python-getting-started",
-  // "keywords": ["python", "django" ],
   "addons": [ "heroku-postgresql" ],
   "env": {
     "SECRET_KEY": {
