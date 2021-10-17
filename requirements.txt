@@ -12,7 +12,7 @@ gunicorn==20.0.4
 idna==2.8
 mccabe==0.6.1
 Pillow==7.0.0
-psycopg2==2.8.4
+#psycopg2==2.8.4
 pycodestyle==2.5.0
 pycparser==2.19
 pyflakes==2.1.1

@@ -31,11 +31,10 @@ def get_env_variable(var_name):
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = get_env_variable('BOOKING_BOT_DJANGO_SECRET_KEY')
-SECRET_KEY = 'd01vm&7a4i7qqbf%2i_qa9!gmf@ijyo!si!tqm^*bu1jnf0(!o'
+SECRET_KEY = get_env_variable('BOOKING_BOT_DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -147,5 +146,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'bart.booking.2020'
-EMAIL_HOST_PASSWORD = 'zippy-direful-immure'
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', 'test@email.com')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', 'test')
