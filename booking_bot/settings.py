@@ -40,7 +40,7 @@ def get_env_variable(var_name):
 SECRET_KEY = get_env_variable('BOOKING_BOT_DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = get_env_variable('DEBUG') == 'True'
 
 ALLOWED_HOSTS = ['*']
 
