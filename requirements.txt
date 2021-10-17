@@ -12,12 +12,13 @@ gunicorn==20.0.4
 idna==2.8
 mccabe==0.6.1
 Pillow==7.0.0
-#psycopg2==2.8.4
+psycopg2==2.9.1
 pycodestyle==2.5.0
 pycparser==2.19
 pyflakes==2.1.1
 pyOpenSSL==19.1.0
 PySocks==1.7.1
+python-dotenv==0.19.1
 pytz==2019.3
 selenium==3.141.0
 six==1.13.0
